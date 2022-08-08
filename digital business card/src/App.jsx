@@ -12,8 +12,10 @@ function App() {
     <>
       <main className='main--content'>
         <Info />
-        <About />
-        <Interests />
+        <div className="text--description">
+          <About />
+          <Interests />
+        </div>
       </main>
       <Footer />
     </>

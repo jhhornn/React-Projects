@@ -6,20 +6,28 @@
 
 body {
   font-family:'Inter', sans-serif;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: #23252C;
 }
 
+/* .container {
+  height: 80%;
+} */
+
 #root {
-  width: 19.8125rem;
+  max-width: 19.8125rem;
+  background: #1A1B21;
+  border-radius: 15px 15px 15px 15px;
 }
 
 img,
 svg {
   max-width: 100%;
-  display: inline-block;
+  display: block;
 }
 
 a {
@@ -30,18 +38,23 @@ a {
   display: flex;
 }
 
+
 .info--image {
   height: 19.8125rem;
+  width: 100%;
 
-}
-
-.main--content {
-  height: 44.75rem;
 }
 
 .my--name {
-  font-weight: 700;
   font-size: 1.5625rem;
+  line-height: 1.2104em;
+  color: #FFF;
+}
+
+.my--name,
+.about,
+.interests {
+  font-weight: 700;
 }
 
 .my--role,
@@ -52,15 +65,21 @@ a {
 .my--role {
   font-size: 0.8rem;
   color: #F3BF99;
+  line-height: 1.21em;
+  margin-top: 0.4836em;
 }
 
 .my--site {
   font-size: 0.64rem;
+  line-height: 1.5em;
+  margin-top: 0.86em;
+  color: #F5F5F5;
 }
 
 .btn {
   font-weight: 500;
   font-size: 0.875rem;
+  margin-top: 0.9375em;
 }
 
 .linkedin,
@@ -69,7 +88,7 @@ a {
   justify-content: center;
   align-items: center;
   line-height: 1.14em;
-  padding: 0.6429em 0.9286em 0.6429em 0.7857em;
+  padding: 0.6429em 1.5em 0.6429em 1.5em;
   border-radius: 0.4286em;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
 }
@@ -77,6 +96,7 @@ a {
 .email {
   background: #FFF;
   border: 1px solid #D1D5DB;
+  margin-right: auto;
 }
 
 .email,
@@ -92,4 +112,49 @@ a {
 
 .intro--icon {
   margin-right: 0.5714em;
+}
+
+.about, 
+.interests {
+  font-size: 1rem;
+  color: #F5F5F5;
+  margin-bottom: 0.3125em;
+}
+
+.about {
+  margin-top: 2.0625em;
+}
+
+.interests {
+  margin-top: 1.6875em;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 0.64rem;
+  line-height: 1.5em;
+  color: #DCDCDC;
+}
+
+.footer {
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  background: #161619;
+  border-radius: 0px 0px 15px 15px;
+  margin-top: 2.44em;
+}
+
+.footer--icons {
+  width: 60%;
+  justify-content: space-between;
+}
+
+.text--info{
+  padding: 0.84em 2.25em 0;
+  text-align: center;
+}
+
+.text--description {
+  padding: 0 2.25em 0.84em;
 }

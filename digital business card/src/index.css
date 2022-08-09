@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-size: 13px;
 }
 
 body {
@@ -14,9 +15,9 @@ body {
   background: #23252C;
 }
 
-/* .container {
+.container {
   height: 80%;
-} */
+}
 
 #root {
   max-width: 19.8125rem;
